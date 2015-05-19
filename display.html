@@ -9,7 +9,7 @@
 <h3>Current user in System</h3>
 <div ng-app="dbusers" ng-controller="sysUsers">
 <ul>
-  <li ng-repeat="n in names">
+  <li ng-repeat="n in names track by $index">
     {{n}}
   </li>
 </ul>
